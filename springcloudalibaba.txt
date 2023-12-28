@@ -1,3 +1,5 @@
 一、版本对应
     1、github->搜索spring-cloud-alibaba->Wiki
     2、本次使用：alibaba 2.2.6.Release  spring boot 2.3.2.Release  spring cloud Hoxton.SR9
+
+二、nacos
