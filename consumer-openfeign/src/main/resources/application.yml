@@ -1,0 +1,13 @@
+server:
+  port: 8013
+
+
+spring:
+  application:
+    name: openfeign-service
+  nacos:
+    server-addr: http://localhost:8848
+    discovery:
+      username: nacos
+      password: nacos
+      namespace: public

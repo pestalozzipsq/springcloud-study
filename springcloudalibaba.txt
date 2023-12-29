@@ -1,5 +1,48 @@
 一、版本对应
     1、github->搜索spring-cloud-alibaba->Wiki
-    2、本次使用：alibaba 2.2.6.Release  spring boot 2.3.2.Release  spring cloud Hoxton.SR9
+    2、本次使用：alibaba 2.2.6.Release  spring boot 2.3.2.Release  spring cloud Hoxton.SR9 JDK1.8 maven 3.6.3
 
 二、nacos
+    1、CAP
+        C:一致性
+        A：可用性
+        P：分区容错性
+    2、使用
+        下载nacos客户端版本1.4.2，github搜索nacos->Release
+        引入依赖
+            spring-cloud-starter-alibaba-nacos-discovery
+        配置文件
+            spring:
+                application:
+                    name:
+                cloud:
+                    nacos:
+                        server-addr:
+                        nacos:
+                            username:
+                            password:
+                            namespace:
+        注解
+            @EnableDiscoveryClient
+
+三、Ribbon
+    RestTemplate @Bean @LoadBalanced
+四、OpenFeign
+    依赖
+        spring-cloud-starter-openFeign
+        需要其他服务发现依赖
+    配置
+    注解@FeignClient(value="访问服务名")
+    @EnableFeignClients
+五、Nacos-Config
+
+六、Sentinel
+
+七、Seata
+
+八、Gateway
+
+九、Skywalking
+
+十、SpringBoot Acturator
+
